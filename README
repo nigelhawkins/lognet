@@ -17,9 +17,9 @@ This sets everything to be logged into the files MyApp.log and MyApp.err in your
 You can then use lines like the following to record stuff.
 
 LogNet.DebugLogger.LogAction("ReplyHandler.GotReply", _
-							 reply.ToString(), _
-							 Logging.LoggingLevels.Informational)
-							 
+                             reply.ToString(), _
+                             Logging.LoggingLevels.Informational)
+
 to log an item in the .log file. Or something like:
 
 catch (exception ex) {
