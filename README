@@ -1,0 +1,29 @@
+lognet is a set of simple logging classes for dotNET.
+
+It was originally written for version 2.0 of the framework, but should work on
+later versions. I haven't tested it on 1.0 or 1.1
+
+Usage is designed to be really simple. You can configure it by adding something
+like the following to your program:
+
+LogNet.DebugLogger.AppName = "MyApp"
+LogNet.DebugLogger.Threshold = LogNet.LoggingLevels.Informational
+LogNet.DebugLogger.Enabled = True
+LogNet.ErrorLogger.AppName = "MyApp"
+
+This sets everything to be logged into the files MyApp.log and MyApp.err in your
+"My Documents" folder.
+
+You can then use lines like the following to record stuff.
+
+LogNet.DebugLogger.LogAction("ReplyHandler.GotReply", _
+							 reply.ToString(), _
+							 Logging.LoggingLevels.Informational)
+							 
+to log an item in the .log file. Or something like:
+
+catch (exception ex) {
+    LogNet.ErrorLogger.LogError(ex, Logging.DisplayOption.OnlyIfLogged)
+}
+
+to record details of an exception in the .err file.
