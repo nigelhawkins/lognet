@@ -21,12 +21,12 @@ You can then use lines like the following to record stuff.
 
 LogNet.DebugLogger.LogAction("ReplyHandler.GotReply", _
                              reply.ToString(), _
-                             Logging.LoggingLevels.Informational)
+                             LogNet.LoggingLevels.Informational)
 
 to log an item in the .log file. Or something like:
 
 catch (exception ex) {
-    LogNet.ErrorLogger.LogError(ex, Logging.DisplayOption.OnlyIfLogged)
+    LogNet.ErrorLogger.LogError(ex, LogNet.DisplayOption.OnlyIfLogged)
 }
 
 to record details of an exception in the .err file.
