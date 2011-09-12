@@ -1,3 +1,9 @@
+// Part of the LogNet logging library.
+// Copyright (c) 2011 Nigel Hawkins
+//
+// Licensed under the Gnu LGPL version 3.
+// See http://www.gnu.org/licenses/lgpl.html
+
 using System;
 using System.Collections;
 using System.Text;
