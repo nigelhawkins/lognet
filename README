@@ -3,6 +3,9 @@ lognet is a set of simple logging classes for dotNET.
 It was originally written for version 2.0 of the framework, but should work on
 later versions. I haven't tested it on 1.0 or 1.1
 
+It is licensed under the Gnu LGPL version 3.
+See http://www.gnu.org/licenses/lgpl.html
+
 Usage is designed to be really simple. You can configure it by adding something
 like the following to your program:
 
